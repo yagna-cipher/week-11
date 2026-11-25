@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Operators</title>
+</head>
+<body>
+ <h2>JavaScript Operators</h2>
+ <div id="out"></div>
+ <script>
+ let a = 10, b = 3;
+ let msg = "";
+ msg += "a = " + a + ", b = " + b + "<br><br>";
+ msg += "<b>Arithmetic</b><br>";
+ msg += "a + b = " + (a + b) + "<br>";
+ msg += "a - b = " + (a - b) + "<br>";
+ msg += "a * b = " + (a * b) + "<br>";
+ msg += "a / b = " + (a / b).toFixed(2) + "<br>";
+ msg += "a % b = " + (a % b) + "<br>";
+ msg += "a ** b = " + (a ** b) + "<br><br>";
+ msg += "<b>Comparison</b><br>";
+ msg += "a > b : " + (a > b) + "<br>";
+ msg += "a == '10' : " + (a == "10") + "<br>";
+ msg += "a === '10' : " + (a === "10") + "<br><br>";
+ msg += "<b>Logical</b><br>";
+ msg += "(a > 5 && b < 5) : " + (a > 5 && b < 5) + "<br>";
+ msg += "(a < 5 || b < 5) : " + (a < 5 || b < 5) + "<br>";
+ msg += "!(a > b) : " + !(a > b);
+ document.getElementById("out").innerHTML = msg;
+ </script>
+</body>
+</html>

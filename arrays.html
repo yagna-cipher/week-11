@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Arrays</title>
+</head>
+<body>
+ <h2>Working with Arrays</h2>
+ <div id="out"></div>
+ <script>
+ let fruits = ["Apple", "Banana", "Mango"];
+ fruits.push("Orange"); 
+ let msg = "Array: " + fruits.join(", ") + "<br>";
+ msg += "Length: " + fruits.length + "<br>";
+ msg += "First element: " + fruits[0] + "<br><br>";
+ let numbers = [10, 25, 7, 40, 15];
+ let sum = 0, max = numbers[0];
+ for (let n of numbers) {
+ sum += n;
+ if (n > max) max = n;
+ }
+ msg += "Numbers: " + numbers.join(", ") + "<br>";
+ msg += "Sum = " + sum + "<br>";
+ msg += "Maximum = " + max;
+ document.getElementById("out").innerHTML = msg;
+ </script>
+</body>
+</html>

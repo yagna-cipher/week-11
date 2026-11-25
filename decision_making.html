@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Decision Making</title>
+</head>
+<body>
+ <h2>Grade Calculator</h2>
+ <div id="out"></div>
+ <script>
+ let marks = 76;
+ let grade;
+ if (marks >= 90) grade = "A+";
+ else if (marks >= 75) grade = "A";
+ else if (marks >= 60) grade = "B";
+ else if (marks >= 40) grade = "C";
+ else grade = "Fail";
+ let remark;
+ switch (grade) {
+ case "A+":
+ case "A": remark = "Excellent"; break;
+ case "B": remark = "Good"; break;
+ case "C": remark = "Average"; break;
+ default: remark = "Needs Improvement";
+ }
+ document.getElementById("out").innerHTML =
+ "Marks: " + marks + "<br>Grade: " + grade +
+ "<br>Remark: " + remark;
+ </script>
+</body>
+</html>

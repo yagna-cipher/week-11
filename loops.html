@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <title>Loops</title>
+</head>
+<body>
+ <h2>Multiplication Table of 5 (for loop)</h2>
+ <div id="t1"></div>
+ <h2>Numbers 1 to 5 (while loop)</h2>
+ <div id="t2"></div>
+ <h2>Countdown 5 to 1 (do-while loop)</h2>
+ <div id="t3"></div>
+ <script>
+ let out1 = "";
+ for (let i = 1; i <= 10; i++) {
+ out1 += "5 x " + i + " = " + (5 * i) + "<br>";
+ }
+ document.getElementById("t1").innerHTML = out1;
+ let out2 = "", j = 1;
+ while (j <= 5) { out2 += j + " "; j++; }
+ document.getElementById("t2").innerHTML = out2;
+ let out3 = "", k = 5;
+ do { out3 += k + " "; k--; } while (k >= 1);
+ document.getElementById("t3").innerHTML = out3;
+ </script>
+</body>
+</html>
